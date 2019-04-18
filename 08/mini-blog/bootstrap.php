@@ -1,6 +1,7 @@
 <?php
 
 require 'core/ClassLoader.php';
+require 'config/config.php';
 
 $loader = new ClassLoader();
 $loader->registerDir(dirname(__FILE__) . '/core');

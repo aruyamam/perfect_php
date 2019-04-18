@@ -26,7 +26,7 @@ class Response
     * 
     * @param string $content
     */
-   public function setContent($cotnent)
+   public function setContent($content)
    {
       $this->content = $content;
    }

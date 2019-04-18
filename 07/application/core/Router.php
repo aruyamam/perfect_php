@@ -9,7 +9,7 @@ class Router
     * 
     * @param array $definitions
     */
-   public function __contstruct($definitions)
+   public function __construct($definitions)
    {
       $this->routes = $this->compileRoutes($definitions);
    }

@@ -2,7 +2,7 @@
 
 class Session
 {
-   protected static $sesionStarted = false;
+   protected static $sessionStarted = false;
    protected static $sesionIdReqenerated = false;
 
    /**
