@@ -140,7 +140,7 @@ abstract class Application
     */
    public function getViewDir()
    {
-      return $this->getRootDir() . '/veiws';
+      return $this->getRootDir() . '/views';
    }
 
    /**
@@ -221,7 +221,7 @@ abstract class Application
     * @param string $controller_class
     * @return Controller
     */
-   protected function findControllerr($controller_class)
+   protected function findController($controller_class)
    {
       if (!class_exists($controller_class)) {
          $controller_file = $this->getControllerDir() . '/' . $controller_class . '.php';

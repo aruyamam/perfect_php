@@ -12,7 +12,7 @@ class View
     * @param string $base_dir
     * @param array $defaults
     */
-   public function __constrcut($base_dir, $defaults = array())
+   public function __construct($base_dir, $defaults = array())
    {
       $this->base_dir = $base_dir;
       $this->defaults = $defaults;
