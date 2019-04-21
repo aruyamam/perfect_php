@@ -120,7 +120,7 @@ abstract class Controller
      }
 
      $token = sha1($form_name . session_id() . microtime());
-     $toknes[] = $token;
+     $tokens[] = $token;
 
      $this->session->set($key, $tokens);
 
