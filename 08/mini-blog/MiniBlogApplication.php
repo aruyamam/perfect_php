@@ -11,15 +11,23 @@ class MiniBlogApplication extends Application
 
    protected function registerRoutes()
    {
-      return array(
-         '/account' => array(
+      return [
+         '/' => [
+            'controller' => 'status',
+            'action' => 'index'
+         ],
+         '/status/post' => [
+            'controller' => 'status',
+            'action' => 'post'
+         ],
+         '/account' => [
             'controller' => 'account',
             'action' => 'index'
-         ),
-         '/account/:action' => array(
+         ],
+         '/account/:action' => [
             'controller' => 'account'
-         )
-      );
+         ]
+      ];
    }
 
    protected function configure()

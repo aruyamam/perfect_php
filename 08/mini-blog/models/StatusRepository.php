@@ -21,7 +21,7 @@ class StatusRepository extends DbRepository
    public function fetchAllPersonalArchivesByUserId($user_id)
    {
       $sql = "
-         SELECT a.* u.user_name
+         SELECT a.*, u.user_name
             FROM status a
                LEFT JOIN user u ON a.user_id = u.id
             WHERE u.id = :user_id
