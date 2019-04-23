@@ -9,9 +9,7 @@
    <?php echo $this->render('errors', ['errors' => $errors]); ?>
    <?php endif; ?>
 
-   <textarea name="body" cols="60" rows="2">
-      <?php echo $this->escape($body); ?>
-   </textarea>
+   <textarea name="body" cols="60" rows="2"><?php echo $this->escape($body); ?></textarea>
 
    <p>
       <input type="submit" value="発信">

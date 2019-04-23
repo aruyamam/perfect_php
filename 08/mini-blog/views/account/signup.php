@@ -10,7 +10,7 @@
    <?php endif; ?>
 
    <?php echo $this->render('account/inputs', [
-      'user_anme' => $user_name,
+      'user_name' => $user_name,
       'password' => $password
    ]); ?>
 
